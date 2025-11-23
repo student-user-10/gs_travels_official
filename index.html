@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="GSTRAVELS — Premium taxi service, curated tours, and luxury travel in Ujjain since 2016." />
+  <title>GSTRAVELS - Premium Taxi Service in Ujjain</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https" ://schema.org",
+    "@type": "TaxiService",
+    "name": "GSTRAVELS",
+    "description": "Premium taxi service and curated tours in Ujjain, MP. Offering temple tours, airport transfers, and outstation trips.",
+    "telephone": "+919098357280",
+    "email": "gstravels@gmail.com",
+    "priceRange": "$$",
+    "image": "https" ://placehold.co/1920x1080/0A2540/FAFAFA/png?text=GSTRAVELS+Hero+Image", 
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ujjain",
+      "addressRegion": "MP",
+      "addressCountry": "IN"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Ujjain"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "GSTRAVELS"
+    }
+  }
+  </script>
+
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#top" class="logo">GSTRAVELS</a>
+      </div>
+      
+      <nav class="nav-desktop">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#cars" class="nav-link">Our Cars</a>
+        <a href="#packages" class="nav-link">Packages</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#booking" class="btn btn-primary nav-cta">Book Now</a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+
+    <nav class="nav-mobile">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#cars" class="nav-link">Our Cars</a>
+      <a href="#packages" class="nav-link">Packages</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#booking" class="btn btn-primary">Book Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="slides">
+        <div class="slide active" style="--bg:url('https://placehold.co/1920x1080/0A2540/FAFAFA/png?text=Premium+Car+Journey')">
+          <div class="overlay"></div>
+          <div class="hero-content container">
+            <h1>Discover Amazing Journeys</h1>
+            <p>Premium cars, curated routes, and trusted drivers.</p>
+            <div class="hero-actions">
+              <a href="#booking" class="btn btn-primary">Book Now</a>
+              <a href="#packages" class="btn btn-outline">View Packages</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide" style="--bg:url('https://placehold.co/1920x1080/FF5722/FAFAFA/png?text=Ujjain+Temple+Tours')">
+          <div class="overlay"></div>
+          <div class="hero-content container">
+            <h1>Ujjain & Beyond</h1>
+            <p>Temple tours, airport transfers, and outstation trips.</p>
+            <div class="hero-actions">
+              <a href="tel:+919098357280" class="btn btn-primary">Call Now</a>
+              <a href="#cars" class="btn btn-outline">Choose a Car</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide" style="--bg:url('https://placehold.co/1920x1080/333333/FAFAFA/png?text=24/7+Reliable+Service')">
+          <div class="overlay"></div>
+          <div class="hero-content container">
+            <h1>Travel, Elevated</h1>
+            <p>Comfort, safety, and 24/7 support — every time.</p>
+            <div class="hero-actions">
+              <a href="#services" class="btn btn-primary">Our Services</a>
+              <a href="#contact" class="btn btn-outline">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+      <button class="slider-btn next" aria-label="Next slide">›</button>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="container">
+        <h2 class="section-title">Quick Booking</h2>
+        <form id="bookingForm" class="booking-form" autocomplete="on" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+              <div class="error-message">Name is required.</div>
+            </div>
+
+            <div class="field">
+              <label for="phone">Contact Number</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX" pattern="^\+?[0-9\s-]{10,15}$" />
+              <div class="error-message">Valid 10-digit number is required.</div>
+            </div>
+
+            <div class="field">
+              <label for="from">Trip From</label>
+              <input type="text" id="from" name="from" required placeholder="e.g., Ujjain" />
+              <div class="error-message">Starting point is required.</div>
+            </div>
+
+            <div class="field">
+              <label for="to">Trip To</label>
+              <input type="text" id="to" name="to" required placeholder="e.g., Indore Airport" />
+              <div class="error-message">Destination is required.</div>
+            </div>
+
+            <div class="field">
+              <label for="car">Car Type</label>
+              <select id="car" name="car" required>
+                <option value="" selected disabled>Select car</option>
+                <option value="Sedan (e.g., Dzire)">Sedan (e.g., Dzire)</option>
+                <option value="SUV (e.g., Ertiga)">SUV (e.g., Ertiga)</option>
+                <option value="Innova Crysta">Innova Crysta</option>
+                <option value="Tempo Traveller">Tempo Traveller</option>
+                <option value="Urbania">Urbania</option>
+              </select>
+              <div class="error-message">Please select a car.</div>
+            </div>
+
+            <div class="field">
+              <label for="date">Travel Date</label>
+              <input type="date" id="date" name="date" required />
+              <div class="error-message">Please select a date.</div>
+            </div>
+
+            <div class="field">
+              <label for="passengers">Passengers</label>
+              <input type="number" id="passengers" name="passengers" min="1" max="50" value="2" required />
+              <div class="error-message">Must be at least 1.</div>
+            </div>
+
+            <div class="field">
+              <label for="notes">Notes</label>
+              <input type="text" id="notes" name="notes" placeholder="Flight no., pickup time, etc." />
+            </div>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn btn-primary">Send on WhatsApp</button>
+            <a class="btn btn-outline" href="tel:+919098357280">Call Now</a>
+          </div>
+          <div id="form-success-message" class="success-message" role="alert">
+            Message is ready! Opening WhatsApp...
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2 class="section-title">About GSTRAVELS</h2>
+          <p>Based in Ujjain and serving since 2016, we deliver luxury travel experiences: temple darshan, airport transfers, outstation trips, and curated tours — all with clean cars and professional drivers.</p>
+          <ul class="ticks">
+            <li>Trusted, on-time pickups</li>
+            <li>Transparent pricing</li>
+            <li>24/7 customer support</li>
+          </ul>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number">9+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">2k+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">25+</span>
+            <span class="stat-label">Cars Available</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">🛕</div>
+            <h3>Temple Tours</h3>
+            <p>Ujjain Darshan, Omkareshwar, Maheshwar and more — planned to perfection.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">✈️</div>
+            <h3>Airport Transfers</h3>
+            <p>Reliable pickups and drops for Indore Airport and major hubs.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🚗</div>
+            <h3>Outstation Trips</h3>
+            <p>Comfortable long drives with experienced chauffeurs.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🕘</div>
+            <h3>24/7 Support</h3>
+            <p>Always available for last-minute plans and emergencies.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cars" id="cars">
+      <div class="container">
+        <h2 class="section-title">Our Cars</h2>
+        <div class="cards three">
+          <article class="card car">
+            <img src="https://placehold.co/800x600/0A2540/FAFAFA/png?text=Sedan+Car" alt="Sedan Car like Dzire" width="800" height="600" loading="lazy" />
+            <div class="card-body">
+              <h3>Sedan</h3>
+              <p>₹12/km • 4 passengers</p>
+              <button class="btn btn-small btn-primary book-car" data-car="Sedan (e.g., Dzire)">Book Sedan</button>
+            </div>
+          </article>
+          <article class="card car">
+            <img src="https" ://placehold.co/800x600/0A2540/FAFAFA/png?text=SUV+Car" alt="SUV Car like Ertiga" width="800" height="600" loading="lazy" />
+            <div class="card-body">
+              <h3>SUV</h3>
+              <p>₹15/km • 6 passengers</p>
+              <button class="btn btn-small btn-primary book-car" data-car="SUV (e.g., Ertiga)">Book SUV</button>
+            </div>
+          </article>
+          <article class="card car">
+            <img src="https" ://placehold.co/800x600/0A2540/FAFAFA/png?text=Innova+Crysta" alt="Innova Crysta" width="800" height="600" loading="lazy" />
+            <div class="card-body">
+              <h3>Innova Crysta</h3>
+              <p>₹18/km • 7 passengers</p>
+              <button class="btn btn-small btn-primary book-car" data-car="Innova Crysta">Book Crysta</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages" id="packages">
+      <div class="container">
+        <h2 class="section-title">Popular Tour Packages</h2>
+        <div class="cards three">
+          <article class="card">
+            <img src="https" ://placehold.co/800x600/FF5722/FAFAFA/png?text=Ujjain+Darshan" alt="Ujjain Darshan" width="800" height="600" loading="lazy" />
+            <div class="card-body">
+              <h3>Ujjain Darshan</h3>
+              <p>From ₹1800</p>
+              <button class="btn btn-small btn-outline book-pkg" data-package="Ujjain Darshan">Book Package</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https" ://placehold.co/800x600/FF5722/FAFAFA/png?text=Khatu+Syam+Tour" alt="Khatu syam" width="800" height="600" loading="lazy" />
+            <div class="card-body">
+              <h3>Ujjain → Khatu syam</h3>
+              <p>From ₹1800</p>
+              <button class="btn btn-small btn-outline book-pkg" data-package="Ujjain to Khatu Syam">Book Package</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https" ://placehold.co/800x600/FF5722/FAFAFA/png?text=Sanwariya+Seth+Tour" alt="Sawariya Seth" width="800" height="600" loading="lazy" />
+            <div class="card-body">
+              <h3>Ujjain → Sanwariya Seth</h3>
+              <p>From ₹1800</p>
+              <button class="btn btn-small btn-outline book-pkg" data-package="Ujjain to Sanwariya Seth">Book Package</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https" ://placehold.co/800x600/FF5722/FAFAFA/png?text=Omkareshwar+Tour" alt="Ujjain - Omkareshwar" width="800" height="600" loading="lazy" />
+            <div class="card-body">
+              <h3>Ujjain → Omkareshwar</h3>
+              <p>From ₹3300</p>
+              <button class="btn btn-small btn-outline book-pkg" data-package="Ujjain to Omkareshwar">Book Package</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https" ://placehold.co/800x600/FF5722/FAFAFA/png?text=Maheshwar+Day+Trip" alt="Maheshwar" width="800" height="600" loading="lazy" />
+            <div class="card-body">
+              <h3>Maheshwar Day Trip</h3>
+              <p>From ₹4200</p>
+              <button class="btn btn-small btn-outline book-pkg" data-package="Maheshwar Day Trip">Book Package</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="cards three">
+          <article class="card testimonial-card">
+            <div class="testimonial-text">"Excellent service. The driver was professional and the car was spotless. Made our Ujjain darshan very comfortable."</div>
+            <div class="testimonial-author">- Rohan Mehta, Mumbai</div>
+          </article>
+          <article class="card testimonial-card">
+            <div class="testimonial-text">"On-time pickup from Indore airport at 3 AM. Very reliable and safe. Highly recommend GSTRAVELS."</div>
+            <div class="testimonial-author">- Priya Sharma, Delhi</div>
+          </article>
+          <article class="card testimonial-card">
+            <div class="testimonial-text">"We booked an Innova for our family trip to Omkareshwar. The pricing was transparent and the journey was smooth."</div>
+            <div class="testimonial-author">- S. Kumar Family, Pune</div>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <details class="faq-item">
+            <summary>What cars are available?</summary>
+            <div class="faq-content">
+              <p>We have a wide range of vehicles including Sedans (like Dzire), SUVs (like Ertiga), premium SUVs (Innova Crysta), and larger vehicles like Tempo Travellers and Urbania.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Do you provide airport pickup and drop?</summary>
+            <div class="faq-content">
+              <p>Yes, we provide 24/7 pickup and drop services for Indore Airport (IDR) as well as other major airports and railway stations.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Are your prices all-inclusive?</summary>
+            <div class="faq-content">
+              <p>Our pricing is transparent. We provide a detailed quote that includes tolls, taxes, and driver allowance. There are no hidden charges.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>How do I book a cab?</summary>
+            <div class="faq-content">
+              <p>You can book by filling out the "Quick Booking" form on our website, calling us directly at +91 90983 57280, or sending us a message on WhatsApp.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">Contact Us</h2>
+          <p>Email: <a href="mailto:gstravels@gmail.com">gstravels@gmail.com</a></p>
+          <p>Phone: <a href="tel:+919098357280">+91 90983 57280</a></p>
+          <p>WhatsApp: <a href="https://wa.me/919098357280" target="_blank" rel="noopener">Chat Now</a></p>
+          <p>Location: Ujjain, Madhya Pradesh</p>
+        </div>
+        <div class="contact-card">
+          <h3>Need Help?</h3>
+          <p>Tell us your route and timing. We’ll confirm availability instantly.</p>
+.
+          <a class="btn btn-primary" href="#booking">Plan My Trip</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">GSTRAVELS</div>
+        <p>Luxury travel, reliable service, and transparent pricing.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#cars">Our Cars</a></li>
+          <li><a href="#packages">Tour Packages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:gstravels@gmail.com">gstravels@gmail.com</a></li>
+          <li><a href="tel:+919098357280">+91 90983 57280</a></li>
+          <li><a href="https://wa.me/919098357280" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2025 GSTRAVELS. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <div class="sticky-cta">
+    <a href="tel:+919098357280" class="cta call">Call</a>
+    <a href="https://wa.me/919098357280" class="cta wa" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="#booking" class="cta book">Book</a>
+  </div>
+
+  <a href="#top" class="scroll-to-top" aria-label="Scroll to top">
+    ^
+  </a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
